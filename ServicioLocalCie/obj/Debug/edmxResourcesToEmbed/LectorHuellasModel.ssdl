@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LectorHuellasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="RegistroES">
+    <Key>
+      <PropertyRef Name="Exp" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="Exp" Type="int" Nullable="false" />
+    <Property Name="Fecha" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tipo" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="IP" Type="nchar" MaxLength="15" />
+  </EntityType>
+  <EntityContainer Name="LectorHuellasModelStoreContainer">
+    <EntitySet Name="RegistroES" EntityType="Self.RegistroES" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BD2ModelStoreContainer" CdmEntityContainer="BD2Entities">
+    <EntitySetMapping Name="TempRegistroES">
+      <EntityTypeMapping TypeName="BD2Model.TempRegistroES">
+        <MappingFragment StoreEntitySet="TempRegistroES">
+          <ScalarProperty Name="Exp" ColumnName="Exp" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
